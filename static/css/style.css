@@ -1,0 +1,91 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+/* Navbar Section */
+
+.navbar {
+  background-color: rgb(27, 25, 25);
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: rgb(27, 25, 25);
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.dropdown-item:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background-color: transparent;
+}
+
+/* Footer Section */
+
+.footer {
+  height: 5rem;
+  background-color: rgb(27, 25, 25);
+  display: flex;
+}
+
+.footer .container {
+  margin: auto;
+}
+
+/* Scroll Top Section */
+
+.scroll-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(27, 25, 25);
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 80px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+}
+
+/* Responsive Breakpoint */
+
+@media screen and (max-width: 992px) {
+  .jumbotron-content {
+    width: 80%;
+  }
+
+  .mission-info {
+    margin-top: 2rem;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+}
